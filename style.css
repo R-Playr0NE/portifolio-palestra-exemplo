@@ -85,7 +85,13 @@ html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe U
   border-radius: var(--radius);
   box-shadow: 0 8px 24px rgba(12,18,30,0.04);
 }
-.project-thumb img{ width:100%; height:140px; object-fit:cover; border-radius:8px; }
+.project-thumb img{
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius:8px;
+  
+}
 .project-title{ margin-bottom:0.5rem; }
 .project-desc{ color:var(--muted); margin-bottom:0.5rem; }
 .project-tags{ font-size:0.85rem; color:var(--muted); margin-bottom:0.6rem; }
