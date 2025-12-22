@@ -1,163 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Raphael | Portfólio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raphael | Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!--
     Instruções rápidas:
     - Troque "Seu Nome" e os textos de exemplo abaixo pelas suas informações.
     - Coloque sua foto como "images/profile.jpg" ou altere o src.
     - Adicione/edite projetos na seção "projects".
-  --></head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <img
-            class="profile-img"
-            src="img/MinhaFoto.png"
-            alt="Foto de perfil (substitua)"
-          />
-          <div class="name-title">
-            <h1 id="portfolio-name">Raphael</h1>
-            <p id="portfolio-role">Desenvolvedor em formação | Entusiasta | Estudante</p>
-          </div>
-        </div>
+  -->
+</head>
 
-        <nav class="nav">
-          <a href="#about">Sobre</a>
-          <a href="#skills">Habilidades</a>
-          <a href="#projects">Projetos</a>
-          <a href="#contact">Contato</a>
-        </nav>
+<body>
+  <header class="site-header">
+    <div class="container header-inner d-flex align-items-center justify-content-betweenr">
+      <div class="brand">
+        <img class="profile-img" src="img/MinhaFoto.png" alt="Foto de perfil (substitua)" />
+        <div class="name-title">
+          <h1 id="portfolio-name">Raphael</h1>
+          <p id="portfolio-role">Desenvolvedor em formação | Entusiasta | Estudante</p>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <section id="about" class="container section about">
-        <h2>Sobre</h2>
-        <p>
-          <!-- Substitua pelo seu resumo profissional -->
-          Olá! Sou estudante de desenvolvimento de
-          sistemas, com foco em desenvolvimento web.
-          Estudo Java, HTML, CSS, JavaScript e banco de
-          dados, sempre buscando aprender na pratica e
-          evoluir como desenvolvedor.
-        </p>
-        <ul class="meta">
-          <li><strong>Local:</strong> Fernandópolis, Brasil</li>
-          <li>
-            <strong>Email:</strong>
-            <a href="mailto:raphael.pino@etec.sp.gov.br">raphael.pino@etec.sp.gov.br</a>
-          </li>
-          <li>
-            <strong>GitHub</strong>
-            <a href="https://github.com/R-Playr0NE">R-Playr0NE</a>
-          </li>
-        </ul>
-      </section>
+      <nav class="nav d-flex align-items-center">
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-      <section id="skills" class="container section skills">
-        <h2>Habilidades em aprendizado</h2>
-        <div class="skills-grid">
-          <div class="skill">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, Bootstrap</p>
-          </div>
-          <div class="skill">
-            <h3>Backend</h3>
-            <p>Java, Spring Boot, Node.js</p>
-          </div>
-          <div class="skill">
-            <h3>Mobile</h3>
-            <p>React Native, Expo</p>
-          </div>
-          <div class="skill">
-            <h3>Bancos de dados</h3>
-            <p>PostgreSQL</p>
-          </div>
+  <button id="theme-toggle" class="theme-btn">🌙</button>
+
+  <main>
+    <section id="about" class="container section about">
+      <h2>Sobre</h2>
+      <p>
+        <!-- Substitua pelo seu resumo profissional -->
+        Olá! Sou estudante de desenvolvimento de
+        sistemas, com foco em desenvolvimento web.
+        Estudo Java, HTML, CSS, JavaScript e banco de
+        dados, sempre buscando aprender na pratica e
+        evoluir como desenvolvedor.
+      </p>
+      <ul class="meta">
+        <li><strong>Local:</strong> Fernandópolis, Brasil</li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:raphael.pino@etec.sp.gov.br">raphael.pino@etec.sp.gov.br</a>
+        </li>
+        <li>
+          <strong>GitHub</strong>
+          <a href="https://github.com/R-Playr0NE">R-Playr0NE</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="container section skills">
+      <h2>Habilidades em aprendizado</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, Bootstrap</p>
         </div>
-      </section>
-
-      <section id="projects" class="container section projects">
-        <h2>Projetos</h2>
-
-        <!-- Repita/duplique este bloco para adicionar mais projetos -->
-        <article class="project">
-          <div class="project-info">
-            <h3 class="project-title">Projeto 1 — Sistema Web Clinica</h3>
-            <p class="project-desc">
-              Um projeto de um sistema simples de uma clinica feito em dupla
-              onde possui cadastro e listagem de médicos e pacientes e consultas,
-              e uma agenda de médicos.
-              Foi utilizado nesse projeto linguagens como Java, Spring Boot, PostgreSQL,
-              JavaScript(JS), HTML, CSS. Uso de uma API de busca cep e uso do Bootstrap.
-            </p>
-            <p class="project-tags">Java • Spring Boot • PostgreSQL</p>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Demo</a> <!-- Falta fazer funcionar -->
-              <a href="https://github.com/R-Playr0NE/sistema-web-clinica" target="_blank" rel="noopener">Código</a>
-            </div>
-          </div>
-          <div class="project-thumb">
-            <img src="img/clinicalove.png" alt="Miniatura do Projeto 1" />
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-info">
-            <h3 class="project-title">Projeto 2 — Padaria</h3>
-            <p class="project-desc">
-              Foi um projeto em grupo onde criamos o layout de
-              uma padaria/confeitaria usando HTML, CSS e
-              Bootstrp, focando em deixar uma aparencia fofa e
-              agradavel.
-            </p>
-            <p class="project-tags">React • Tailwind • API</p>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Demo</a> <!-- Falta adicionar a demo -->
-              <a href="https://github.com/R-Playr0NE/projeto-interface-ingless-padaria" target="_blank" rel="noopener">Código</a>
-            </div>
-          </div>
-          <div class="project-thumb">
-            <img src="img/logomarca-para-confeitaria.png" alt="Miniatura do Projeto 2" />
-          </div>
-        </article>
-        <!-- /blocos de projeto -->
-      </section>
-
-      <section id="contact" class="container section contact">
-        <h2>Contato</h2>
-        <p>Vamos conversar? Entre em contato!</p>
-
-        <div class="contact-cards">
-          <div class="card">
-            <h4>Email</h4>
-            <a href="mailto:seuemail@exemplo.com">raphael.pino@etec.sp.gov.br</a>
-          </div>
-          <div class="card">
-            <h4>GitHub</h4>
-            <a href="https://github.com/R-Playr0NE" target="_blank" rel="noopener"
-              >github.com/R-Playr0NE</a
-            >
-          </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <p>Java, Spring Boot</p>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          © <span id="year"></span> Raphael — Todos os direitos reservados.
-        </p>
+        <div class="skill">
+          <h3>Mobile</h3>
+          <p>React Native, Expo</p>
+        </div>
+        <div class="skill">
+          <h3>Bancos de dados</h3>
+          <p>PostgreSQL</p>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <script>
-      // Atualiza o ano no rodapé
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <section id="projects" class="container section projects">
+      <h2>Projetos</h2>
+
+      <!-- Repita/duplique este bloco para adicionar mais projetos -->
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 1 — Sistema Web Clinica</h3>
+          <p class="project-desc">
+            Um projeto de um sistema simples de uma clinica feito em dupla
+            onde possui cadastro e listagem de médicos e pacientes e consultas,
+            e uma agenda de médicos.
+            Foi utilizado nesse projeto linguagens como Java, Spring Boot, PostgreSQL,
+            JavaScript(JS), HTML, CSS. Uso de uma API de busca cep e uso do Bootstrap.
+          </p>
+          <p class="project-tags">Java • Spring Boot • PostgreSQL</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> <!-- Falta fazer funcionar -->
+            <a href="https://github.com/R-Playr0NE/sistema-web-clinica" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="img/clinicalove.png" alt="Miniatura do Projeto 1" />
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-info">
+          <h3 class="project-title">Projeto 2 — Padaria</h3>
+          <p class="project-desc">
+            Foi um projeto em grupo onde criamos o layout de
+            uma padaria/confeitaria usando HTML, CSS e
+            Bootstrp, focando em deixar uma aparencia fofa e
+            agradavel.
+          </p>
+          <p class="project-tags">React • Tailwind • API</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> <!-- Falta adicionar a demo -->
+            <a href="https://github.com/R-Playr0NE/projeto-interface-ingless-padaria" target="_blank"
+              rel="noopener">Código</a>
+          </div>
+        </div>
+        <div class="project-thumb">
+          <img src="img/logomarca-para-confeitaria.png" alt="Miniatura do Projeto 2" />
+        </div>
+      </article>
+      <!-- /blocos de projeto -->
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Entre em contato!</p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h4>Email</h4>
+          <a href="mailto:seuemail@exemplo.com">raphael.pino@etec.sp.gov.br</a>
+        </div>
+        <div class="card">
+          <h4>GitHub</h4>
+          <a href="https://github.com/R-Playr0NE" target="_blank" rel="noopener">github.com/R-Playr0NE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © <span id="year"></span> Raphael — Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+
+  <script>
+    const btn = document.getElementById("theme-toggle");
+
+    btn.addEventListener("click", () => {
+      const dark = document.body.classList.toggle("dark");
+
+      btn.innerHTML = dark
+        ? "☀️ Tema claro"
+        : "🌙 Tema escuro";
+    });
+  </script>
+
+
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
