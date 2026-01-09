@@ -105,11 +105,14 @@ html,body{
 .project-desc{ color:var(--muted); margin-bottom:0.5rem; }
 .project-tags{ font-size:0.85rem; color:var(--muted); margin-bottom:0.6rem; }
 .project-links a{
-  border: 1px solid var(--accent-hover);
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
 }
 .project-links a:hover{
-  background: var(--accent-hover);
-  color: var(--accent);
+  border-color: var(--text);
+  background: var(--accent);
+  color: var(--border);
 }
 .projects .project,
 .skill,
@@ -130,7 +133,7 @@ html,body{
   border-radius:var(--radius);
   box-shadow: 0 8px 20px rgba(12,18,30,0.04);
 }
-.card h4{ margin-bottom:0.4rem; }
+.card h4{ margin-bottom:0.4rem; color: var(--text);}
 
 /* Footer */
 .site-footer{ border-top:1px solid #e6e9ef; padding:1rem 0; background:transparent; color:var(--muted); text-align:center; }
